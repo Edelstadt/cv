@@ -1,0 +1,179 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Stylish Curriculum Vitae
+% LaTeX Template
+% Version 1.1 (September 10, 2021)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Authors:
+% Stefano (https://www.kindoblue.nl)
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper, oneside, final]{scrartcl} % Paper options using the scrartcl class
+
+\usepackage{scrlayer-scrpage} % Provides headers and footers configuration
+\usepackage{titlesec} % Allows creating custom \section's
+\usepackage{marvosym} % Allows the use of symbols
+\usepackage{tabularx,colortbl} % Advanced table configurations
+\usepackage{ebgaramond} % Use the EB Garamond font
+\usepackage{microtype} % To enable letterspacing
+
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule] % Section formatting
+
+\pagestyle{scrheadings} % Print the headers and footers on all pages
+
+\addtolength{\voffset}{-0.5in} % Adjust the vertical offset - less whitespace at the top of the page
+\addtolength{\textheight}{3cm} % Adjust the text height - less whitespace at the bottom of the page
+
+\newcommand{\gray}{\rowcolor[gray]{.90}} % Custom highlighting for the work experience and education sections
+
+%----------------------------------------------------------------------------------------
+%	FOOTER SECTION
+%----------------------------------------------------------------------------------------
+
+\renewcommand{\headfont}{\normalfont\rmfamily\scshape} % Font settings for footer
+
+\cofoot{
+\fontsize{12.5}{17}\selectfont % Letter spacing and font size
+
+\textls[150]{Hradec Králové}\\ % Your mailing address
+{\Large\Letter} \textls[150]{marcus.scalpere@gmail.com \ {\Large\Telefon} +420 733 220 293} % Your email address and phone number
+}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{center} % Center everything in the document
+
+%----------------------------------------------------------------------------------------
+%	HEADER SECTION
+%----------------------------------------------------------------------------------------
+
+{\fontsize{36}{36}\selectfont\scshape\textls[200]{Marek Dlabáček}} % Your name at the top
+
+\vspace{1.5cm} % Extra whitespace after the large name at the top
+
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE
+%----------------------------------------------------------------------------------------
+
+\section{O mně}
+
+Primárně Python programátor, ale nepohrdnu ani Golang. Lehké zkušenosti s DevOps. Hledám možnosti jak naboostovat svoje znalosti jak v Pythonu, tak i v Golangu a Rustu.\\
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Pracovní zkušenosti}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{3cm}X}
+\gray Období & \textbf{Září 2019 --- Leden 2022}\\
+\gray Zaměstnavatel & \textbf{Team Zeus, s.r.o.} \hfill Praha (remote)\\
+\gray Pozice & \textbf{Python/Django programátor}\\
+\gray Jazyky & \textbf{Python}\\
+       & Vývoj e-shop platformy, integrace platebních bran, import produktů, rewrite legacy kotlin kodu na python, integrování CI, drobnější práce s AWS a Ansible.
+\end{tabularx}
+
+\vspace{12pt}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{3cm}X}
+\gray Období & \textbf{Září 2018 --- Září 2019 (Part Time)}\\
+\gray Zaměstnavatel & \textbf{Hanaboso, s.r.o.} \hfill Hradec Králové\\
+\gray Pozice & \textbf{Golang programátor}\\
+\gray Jazyky & \textbf{Golang}\\
+       & Primárně vývoj microservices pro import produktů, testování, menší práce s AWS a Ansible.
+\end{tabularx}
+
+\vspace{12pt}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{3cm}X}
+\gray Období & \textbf{Únor 2018 ---  Březen 2019 (remote)}\\
+\gray Zaměstnavatel & \textbf{Národní technická knihovna} \hfill Praha (remote)\\
+\gray Pozice & \textbf{Python programátor}\\
+\gray Jazyky & \textbf{Python}\\
+       & Integrování a rozšíření systému Invenio.
+\end{tabularx}
+
+\vspace{12pt}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{3cm}X}
+\gray Období & \textbf{Červen 2016 ---  Únor 2018 (Part Time)}\\
+\gray Zaměstnavatel & \textbf{Roští, s.r.o.} \hfill Hradec Králové\\
+\gray Pozice & \textbf{Python programátor}\\
+\gray Jazyky & \textbf{Python}\\
+       & Vývoj a správa platformy pro poskytování hostingu, zákaznický servis.
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	VOLUNTEER
+%----------------------------------------------------------------------------------------
+\section{Dobrovolná činnost}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{3cm}X}
+\gray PyLadies & \textbf {Pomocný kouč} \\
+\gray Obec Prasek & \textbf {Vedení kroniky a pomocný knihovník (primárně spuštění a nastavení repozitáře)} \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Vzdělání}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Období & \textbf{2007 --- 2010}\\
+\gray Obor & \textbf{Archivnictví-historie}\\
+\gray Zakončení & \textbf{Bez titulu}\\
+\gray Škola & \textbf{Univerzita Hradec Králové}\\
+\end{tabularx}
+
+\vspace{12pt}
+
+\begin{tabularx}{0.97\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\gray Období & \textbf{2001 --- 2005}\\
+\gray Obor & \textbf{Mechanik seřizovač-programátor}\\
+\gray Zakončení & \textbf{Maturita}\\
+\gray Škola & \textbf{SOŠ a SOU Hradební} \hfill Hradec Králové\\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Dovednosti}
+	
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} |l|l|}
+Počítačové jazyky & Python(středně pokročilý), Golang(spíše začátečník),\\
+& HTML(začátečník), CSS(začátečník), Bash(středně pokročilý) \\
+Protokoly \& APIs & XML, JSON, REST, gRPC \\
+Databáze & MySQL(začátečník), PostgreSQL(začátečník), MariaDB(začátečník) \\
+Nástroje & GIT(začátečník), Shell(středně pokročilý), PyCharm(středně pokročilý) \\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+
+\section{Jazyky}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} |l|l|}
+Češina & Rodilý mluvčí \\
+Latina & Středně pokročilý \\
+Angličtina & Začátečník, na zlepšení úrovně aktivně pracuji. \\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+
+\end{center}
+
+\end{document}
